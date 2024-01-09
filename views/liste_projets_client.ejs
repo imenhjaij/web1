@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Liste de Projets pour le Client</title>
+  <link rel="stylesheet" href="/css/style.css"> <!-- Lien vers votre fichier CSS -->
+</head>
+<body>
+  <div class="container">
+    <h1>Liste de vos projets</h1>
+    <div class="projects-list">
+      <% if (projets.length > 0) { %>
+        <% projets.forEach((projet) => { %>
+          <div class="project">
+            <h3><%= projet.titre %></h3>
+            <p>Description : <%= projet.description %></p>
+            <!-- Afficher d'autres détails du projet selon vos besoins -->
+          </div>
+        <% }); %>
+      <% } else { %>
+        <p>Aucun projet disponible pour le moment.</p>
+      <% } %>
+    </div>
+  </div>
+</body>
+</html>

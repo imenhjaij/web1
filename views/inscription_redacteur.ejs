@@ -1,0 +1,19 @@
+<%- extend('layout') %>
+
+<%- block('body') %>
+    <h1>Inscription Rédacteur</h1>
+    <!-- Formulaire d'inscription pour les rédacteurs -->
+    <form action="/soumettre-inscription" method="POST">
+        <input type="text" name="nom" placeholder="Nom" required><br>
+        <input type="text" name="prenom" placeholder="Prénom" required><br>
+        <input type="email" name="email" placeholder="Adresse e-mail" required><br>
+        <input type="text" name="profession" placeholder="Profession"><br>
+        <input type="text" name="adresse" placeholder="Adresse"><br>
+        <input type="text" name="cin" placeholder="Numéro de CIN"><br>
+        <input type="text" name="numero_compte" placeholder="Numéro de compte bancaire"><br>
+        <input type="file" name="cv" accept=".pdf, .doc, .docx" required><br>
+        <input type="password" name="mot_de_passe" placeholder="Mot de passe" required><br>
+        <input type="password" name="confirmer_mot_de_passe" placeholder="Confirmer le mot de passe" required><br>
+        <input type="submit" value="S'inscrire">
+    </form>
+</%- endblock %>

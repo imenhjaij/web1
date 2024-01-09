@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Liste des Projets</title>
+  <link rel="stylesheet" href="/css/style.css"> <!-- Ajoutez le lien vers votre fichier CSS -->
+</head>
+<body>
+  <div class="container">
+    <h1>Liste des projets</h1>
+    <div class="projects-list">
+      <% if (projets.length > 0) { %>
+        <% projets.forEach((projet) => { %>
+          <div class="project">
+            <h3><%= projet.title %></h3>
+            <p>Prix : <%= projet.price %> $</p>
+            <p>Description : <%= projet.description %></p>
+            <p>Délai de livraison : <%= projet.delivery_time %> jours</p>
+          </div>
+        <% }); %>
+      <% } else { %>
+        <p>Aucun projet disponible pour le moment.</p>
+      <% } %>
+    </div>
+    <p><a href="/espace-client">Espace Client</a></p> <!-- Ajouter un lien vers la page client -->
+    <p><a href="/espace-redacteur">Espace Rédacteur</a></p> <!-- Ajouter un lien vers la page rédacteur -->
+  
+  </div>
+</body>
+</html>

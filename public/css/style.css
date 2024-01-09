@@ -1,0 +1,74 @@
+/* Réinitialisation des styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Styles généraux */
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 20px;
+  }
+  
+  .container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  /* Styles pour la liste des projets */
+  .project {
+    background: #f9f9f9;
+    margin: 10px 0;
+    padding: 20px;
+  }
+  
+  .project h3 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .project p {
+    color: #777;
+  }
+  
+  /* Styles pour le formulaire de dépôt de projet */
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .label {
+    display: block;
+    font-weight: bold;
+  }
+  
+  .input-group {
+    margin-top: 8px;
+  }
+  
+  .input-group input[type='text'], 
+  .input-group input[type='number'],
+  .input-group textarea {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .input-group input[type='submit'] {
+    background: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  /* Ajoutez vos propres styles ici */
+  
